@@ -10,7 +10,7 @@ import {
   ListAssetFiltersInput,
   ListAssetFiltersOutput,
   ListAssetFiltersOutputFilterSensitiveLog,
-} from "../models/models_0";
+} from "../models/models_1";
 import { de_ListAssetFiltersCommand, se_ListAssetFiltersCommand } from "../protocols/Aws_restJson1";
 
 /**

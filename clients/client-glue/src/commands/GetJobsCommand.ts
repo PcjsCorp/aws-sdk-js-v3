@@ -7,7 +7,7 @@ import { MetadataBearer as __MetadataBearer } from "@smithy/types";
 import { commonParams } from "../endpoint/EndpointParameters";
 import { GlueClientResolvedConfig, ServiceInputTypes, ServiceOutputTypes } from "../GlueClient";
 import { GetJobsRequest } from "../models/models_1";
-import { GetJobsResponse, GetJobsResponseFilterSensitiveLog } from "../models/models_2";
+import { GetJobsResponse, GetJobsResponseFilterSensitiveLog } from "../models/models_3";
 import { de_GetJobsCommand, se_GetJobsCommand } from "../protocols/Aws_json1_1";
 
 /**
@@ -308,6 +308,9 @@ export interface GetJobsCommandOutput extends GetJobsResponse, __MetadataBearer 
  * //             Inputs: [ // required
  * //               "STRING_VALUE",
  * //             ],
+ * //             PartitionKeys: [ // GlueStudioPathList
+ * //               "<EnclosedInStringProperties>",
+ * //             ],
  * //             Database: "STRING_VALUE", // required
  * //             Table: "STRING_VALUE", // required
  * //           },
@@ -333,7 +336,7 @@ export interface GetJobsCommandOutput extends GetJobsResponse, __MetadataBearer 
  * //             Inputs: [ // required
  * //               "STRING_VALUE",
  * //             ],
- * //             PartitionKeys: [ // GlueStudioPathList
+ * //             PartitionKeys: [
  * //               "<EnclosedInStringProperties>",
  * //             ],
  * //             Table: "STRING_VALUE", // required
@@ -407,9 +410,7 @@ export interface GetJobsCommandOutput extends GetJobsResponse, __MetadataBearer 
  * //           DropFields: { // DropFields
  * //             Name: "STRING_VALUE", // required
  * //             Inputs: "<OneInput>", // required
- * //             Paths: [ // required
- * //               "<EnclosedInStringProperties>",
- * //             ],
+ * //             Paths: "<GlueStudioPathList>", // required
  * //           },
  * //           RenameField: { // RenameField
  * //             Name: "STRING_VALUE", // required

@@ -6,7 +6,7 @@ import { MetadataBearer as __MetadataBearer } from "@smithy/types";
 
 import { DataZoneClientResolvedConfig, ServiceInputTypes, ServiceOutputTypes } from "../DataZoneClient";
 import { commonParams } from "../endpoint/EndpointParameters";
-import { ListAssetRevisionsInput, ListAssetRevisionsOutput } from "../models/models_0";
+import { ListAssetRevisionsInput, ListAssetRevisionsOutput } from "../models/models_1";
 import { de_ListAssetRevisionsCommand, se_ListAssetRevisionsCommand } from "../protocols/Aws_restJson1";
 
 /**

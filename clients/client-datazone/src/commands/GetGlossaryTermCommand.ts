@@ -10,7 +10,7 @@ import {
   GetGlossaryTermInput,
   GetGlossaryTermOutput,
   GetGlossaryTermOutputFilterSensitiveLog,
-} from "../models/models_0";
+} from "../models/models_1";
 import { de_GetGlossaryTermCommand, se_GetGlossaryTermCommand } from "../protocols/Aws_restJson1";
 
 /**

@@ -75,6 +75,7 @@ export interface DescribeUserPoolCommandOutput extends DescribeUserPoolResponse,
  * //         RequireLowercase: true || false,
  * //         RequireNumbers: true || false,
  * //         RequireSymbols: true || false,
+ * //         PasswordHistorySize: Number("int"),
  * //         TemporaryPasswordValidityDays: Number("int"),
  * //       },
  * //     },
@@ -186,6 +187,9 @@ export interface DescribeUserPoolCommandOutput extends DescribeUserPoolResponse,
  * //     },
  * //     UserPoolAddOns: { // UserPoolAddOnsType
  * //       AdvancedSecurityMode: "OFF" || "AUDIT" || "ENFORCED", // required
+ * //       AdvancedSecurityAdditionalFlows: { // AdvancedSecurityAdditionalFlowsType
+ * //         CustomAuthMode: "AUDIT" || "ENFORCED",
+ * //       },
  * //     },
  * //     UsernameConfiguration: { // UsernameConfigurationType
  * //       CaseSensitive: true || false, // required

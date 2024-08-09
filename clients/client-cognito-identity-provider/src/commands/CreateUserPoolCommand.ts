@@ -89,6 +89,7 @@ export interface CreateUserPoolCommandOutput extends CreateUserPoolResponse, __M
  *       RequireLowercase: true || false,
  *       RequireNumbers: true || false,
  *       RequireSymbols: true || false,
+ *       PasswordHistorySize: Number("int"),
  *       TemporaryPasswordValidityDays: Number("int"),
  *     },
  *   },
@@ -192,6 +193,9 @@ export interface CreateUserPoolCommandOutput extends CreateUserPoolResponse, __M
  *   ],
  *   UserPoolAddOns: { // UserPoolAddOnsType
  *     AdvancedSecurityMode: "OFF" || "AUDIT" || "ENFORCED", // required
+ *     AdvancedSecurityAdditionalFlows: { // AdvancedSecurityAdditionalFlowsType
+ *       CustomAuthMode: "AUDIT" || "ENFORCED",
+ *     },
  *   },
  *   UsernameConfiguration: { // UsernameConfigurationType
  *     CaseSensitive: true || false, // required
@@ -218,6 +222,7 @@ export interface CreateUserPoolCommandOutput extends CreateUserPoolResponse, __M
  * //         RequireLowercase: true || false,
  * //         RequireNumbers: true || false,
  * //         RequireSymbols: true || false,
+ * //         PasswordHistorySize: Number("int"),
  * //         TemporaryPasswordValidityDays: Number("int"),
  * //       },
  * //     },
@@ -329,6 +334,9 @@ export interface CreateUserPoolCommandOutput extends CreateUserPoolResponse, __M
  * //     },
  * //     UserPoolAddOns: { // UserPoolAddOnsType
  * //       AdvancedSecurityMode: "OFF" || "AUDIT" || "ENFORCED", // required
+ * //       AdvancedSecurityAdditionalFlows: { // AdvancedSecurityAdditionalFlowsType
+ * //         CustomAuthMode: "AUDIT" || "ENFORCED",
+ * //       },
  * //     },
  * //     UsernameConfiguration: { // UsernameConfigurationType
  * //       CaseSensitive: true || false, // required
@@ -371,7 +379,7 @@ export interface CreateUserPoolCommandOutput extends CreateUserPoolResponse, __M
  * @throws {@link InvalidSmsRoleTrustRelationshipException} (client fault)
  *  <p>This exception is thrown when the trust relationship is not valid for the role
  *             provided for SMS configuration. This can happen if you don't trust
- *                 <code>cognito-idp.amazonaws.com</code> or the external ID provided in the role does
+ *             <code>cognito-idp.amazonaws.com</code> or the external ID provided in the role does
  *             not match what is provided in the SMS configuration for the user pool.</p>
  *
  * @throws {@link LimitExceededException} (client fault)

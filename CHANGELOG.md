@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.627.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.626.0...v3.627.0) (2024-08-08)
+
+
+### Features
+
+* **client-cognito-identity-provider:** Added support for threat protection for custom authentication in Amazon Cognito user pools. ([e2e4ccc](https://github.com/aws/aws-sdk-js-v3/commit/e2e4cccb7a504ee0578ba36d7152eafa61494613))
+* **client-connect:** This release fixes a regression in number of access control tags that are allowed to be added to a security profile in Amazon Connect. You can now add up to four access control tags on a single security profile. ([b2a49e6](https://github.com/aws/aws-sdk-js-v3/commit/b2a49e6f2e6eb2c8cda02b50bbedba5172fc5e33))
+* **client-ec2:** Launch of private IPv6 addressing for VPCs and Subnets. VPC IPAM supports the planning and monitoring of private IPv6 usage. ([94af5dd](https://github.com/aws/aws-sdk-js-v3/commit/94af5ddc7f131af9a7258bcf802ea9b9d2a1e7d3))
+* **client-glue:** This release adds support to retrieve the validation status when creating or updating Glue Data Catalog Views. Also added is support for BasicCatalogTarget partition keys. ([be3723e](https://github.com/aws/aws-sdk-js-v3/commit/be3723ee612aa589746b3a9245f1c3a0b7f3800c))
+
+
+
+
+
+# [3.626.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.625.0...v3.626.0) (2024-08-07)
+
+
+### Bug Fixes
+
+* **turbo:** remove filtering from build:ci script and improve handling of filtering errors ([#6361](https://github.com/aws/aws-sdk-js-v3/issues/6361)) ([e52cc35](https://github.com/aws/aws-sdk-js-v3/commit/e52cc35ca2142585bace26d77f173c89edd0aa36))
+
+
+### Features
+
+* **client-appintegrations:** Updated CreateDataIntegration and CreateDataIntegrationAssociation API to support bulk data export from Amazon Connect Customer Profiles to the customer S3 bucket. ([4ce5597](https://github.com/aws/aws-sdk-js-v3/commit/4ce55973ecb9a3daa04ae67431c894bdc2400137))
+* **client-glue:** Introducing AWS Glue Data Quality anomaly detection, a new functionality that uses ML-based solutions to detect data anomalies users have not explicitly defined rules for. ([d6bd32e](https://github.com/aws/aws-sdk-js-v3/commit/d6bd32e6f12974c8f99bd93487dc0423cba9e547))
+
+
+
+
+
+# [3.625.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.624.0...v3.625.0) (2024-08-06)
+
+
+### Features
+
+* **client-bedrock-agent-runtime:** Introduce model invocation output traces for orchestration traces, which contain the model's raw response and usage. ([ad61bac](https://github.com/aws/aws-sdk-js-v3/commit/ad61bacdf1a8f9f21eaa67aef7d9b5c2e12f2cff))
+* **client-cognito-identity-provider:** Advanced security feature updates to include password history and log export for Cognito user pools. ([f35898e](https://github.com/aws/aws-sdk-js-v3/commit/f35898ec563ffb61bb40d88f6012d9571bbd8d75))
+* **client-cost-optimization-hub:** This release adds savings percentage support to the ListRecommendationSummaries API. ([82ea670](https://github.com/aws/aws-sdk-js-v3/commit/82ea670c8df1aa3fc00ca872c1105c9fbf59a678))
+* **client-workspaces:** Added support for BYOL_GRAPHICS_G4DN_WSP IngestionProcess ([871d342](https://github.com/aws/aws-sdk-js-v3/commit/871d34202fb92f2afb59efa2fc199cec50239778))
+
+
+
+
+
+# [3.624.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.623.0...v3.624.0) (2024-08-05)
+
+
+### Features
+
+* **client-datazone:** This releases Data Product feature. Data Products allow grouping data assets into cohesive, self-contained units for ease of publishing for data producers, and ease of finding and accessing for data consumers. ([91b2561](https://github.com/aws/aws-sdk-js-v3/commit/91b25612bf0db4cd594552843539a2b6f9e524dc))
+* **client-ecr:** Released two new APIs along with documentation updates. The GetAccountSetting API is used to view the current basic scan type version setting for your registry, while the PutAccountSetting API is used to update the basic scan type version for your registry. ([6da4252](https://github.com/aws/aws-sdk-js-v3/commit/6da42523c72f6e25a176547f488fc4c50b064271))
+* **client-kinesis-video-webrtc-storage:** Add JoinStorageSessionAsViewer API ([36c7cdd](https://github.com/aws/aws-sdk-js-v3/commit/36c7cddb0d5366a0548af40baad4609bad393377))
+* **clients:** update client endpoints as of 2024-08-05 ([7cd8b7c](https://github.com/aws/aws-sdk-js-v3/commit/7cd8b7cf8f66c585b968f7cc1591d94ff42db620))
+
+
+
+
+
 # [3.623.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.622.0...v3.623.0) (2024-08-02)
 
 
